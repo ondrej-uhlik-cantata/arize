@@ -256,3 +256,9 @@ export let employeeData: Object[] = [
     PhotoPath: 'http://accweb/emmployees/davolio.bmp',
   },
 ];
+export let taskList: Object[] = [
+  {
+    taskId:1,
+    Date: new Date(),
+  }
+]
