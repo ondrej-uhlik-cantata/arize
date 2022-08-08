@@ -260,5 +260,10 @@ export let taskList: Object[] = [
   {
     taskId:1,
     Date: new Date(),
+  },
+  {
+    taskId:2,
+    Date: new Date(),
   }
+
 ]
