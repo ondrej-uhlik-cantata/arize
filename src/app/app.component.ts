@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { employeeData } from './datasource';
+import { employeeData,events } from './datasource';
+import { Observable } from 'rxjs/Observable';
+import {of} from 'rxjs';
+import {Event} from './Event';
 
 @Component({
   selector: 'app-root',
@@ -9,10 +12,15 @@ import { employeeData } from './datasource';
 export class AppComponent implements OnInit {
   title = 'arize';
 
-  public data!: object[];
+  public data!:Observable<object>;
+
+
+   public events! :Observable<Event[]>;
+
 
   ngOnInit(): void {
-    this.data = employeeData;
+    this.data = of(employeeData);
+    this.events = of(events);
   }
   administrateEvent(data: number): void {
     alert('Patient Id is ' + data);

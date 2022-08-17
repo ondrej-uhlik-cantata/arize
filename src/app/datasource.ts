@@ -1,3 +1,4 @@
+import { Event } from "./Event";
 export let data: Object[] = [
   {
     OrderID: 10248,
@@ -268,4 +269,18 @@ export let taskList: Object[] = [
     Date: new Date(),
   }
 
+]
+export let events : Event[] = [
+  {
+    Code:"001",
+    description:"first",
+    id:1,
+    Name: "Sweet Jan"
+  },
+  {
+    Code:"002",
+    description:"second",
+    id:2,
+    Name: "Sweet Marie"
+  }
 ]
