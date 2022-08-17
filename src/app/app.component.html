@@ -7,28 +7,23 @@
   </e-columns>
   <ng-template #rowTemplate let-data>
     <tr>
-        <td width="80px;">
+        <td width="80px;" style="background-color:#E0E0E0;border-color: white; border-style: solid" >
           {{data.BirthDate| date:'M/d/ hh:mm'}}
         </td>
         <td class="details">
-            <table class="CardTable" cellpadding="3" cellspacing="2">
+            <table  cellpadding="3" cellspacing="2">
                 <colgroup>
                     <col width="50%">
                     <col width="50%">
                 </colgroup>
                 <tbody>
-                    <tr>
-                        <td class="CardHeader">First Name </td>
+                    <tr style="border-color: gray; border-style: solid; border-width:2px">
+                        <td (click)="administrateEvent(data.index)" >{{data.LastName}}</td>
                         <td>{{data.FirstName}} </td>
                     </tr>
-                    <tr>
-                        <td class="CardHeader">Last Name</td>
-                        <td>{{data.LastName}} </td>
-                    </tr>
-                    <tr>
-                        <td class="CardHeader">Title</td>
-
-                        <td>{{data.Title}}</td>
+                    <tr style="border-color: gray; border-style: solid">
+                      <td>{{data.Title}}</td>
+                      <td>{{data.Address}} </td>
                     </tr>
                 </tbody>
             </table>

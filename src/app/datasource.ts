@@ -213,13 +213,13 @@ export let data: Object[] = [
 export let employeeData: Object[] = [
   {
     EmployeeID: 8,
-    LastName: 'Callahan',
-    FirstName: 'Laura',
-    Title: 'Inside Sales Coordinator',
+    LastName: 'Sweet, Mathew(1247)/0005',
+    FirstName: 'ASPIRIN 325 MG',
+    Title: 'Sweet, Mathew(1247)/0003',
     TitleOfCourtesy: 'Ms.',
     BirthDate: new Date(),
     HireDate: new Date(762843600000),
-    Address: '4726 - 11th Ave. N.E.',
+    Address: 'VITAMING B COMPLEX',
     City: 'Seattle',
     Region: 'WA',
     PostalCode: '98105',
@@ -235,13 +235,13 @@ export let employeeData: Object[] = [
   },
   {
     EmployeeID: 9,
-    LastName: 'Dodsworth',
-    FirstName: 'Anne',
-    Title: 'Sales Representative',
+    LastName: 'Sweet, Mathew(1247)/0003',
+    FirstName: 'DIGOXIN 0.25MG TABLET',
+    Title: '',
     TitleOfCourtesy: 'Ms.',
     BirthDate: new Date(),
     HireDate: new Date(784875600000),
-    Address: '7 Houndstooth Rd.',
+    Address: 'POTASSIUM CHLORIDE',
     City: 'London',
     Region: null,
     PostalCode: 'WG2 7LT',
@@ -259,7 +259,9 @@ export let employeeData: Object[] = [
 export let taskList: Object[] = [
   {
     taskId:1,
-    Date: new Date(),
+    Date: new Date('1968-11-16T00:00:00' ),
+    ScheduleEvent :"Sweet, Mathew/(1247)/005",
+    AdministrateEvent :"ASPIRING 325 MG TABLEK",
   },
   {
     taskId:2,

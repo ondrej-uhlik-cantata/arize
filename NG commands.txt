@@ -1,0 +1,6 @@
+ng generate module task-list --d
+
+ng g component task-list --d pozor na adresar!!
+
+nvm use 8.11.3
+nvm ls
